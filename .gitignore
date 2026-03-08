@@ -1,0 +1,9 @@
+assets/
+weights/
+output/*.pk3
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.next/
+out/

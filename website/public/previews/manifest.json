@@ -1,0 +1,107 @@
+[
+  {
+    "name": "GRNMEN",
+    "type": "textures",
+    "before": "textures-GRNMEN-before.webp",
+    "after": "textures-GRNMEN-after.webp",
+    "compare": "textures-GRNMEN-compare.webp"
+  },
+  {
+    "name": "SKINSYMB",
+    "type": "textures",
+    "before": "textures-SKINSYMB-before.webp",
+    "after": "textures-SKINSYMB-after.webp",
+    "compare": "textures-SKINSYMB-compare.webp"
+  },
+  {
+    "name": "SKSNAKE4",
+    "type": "textures",
+    "before": "textures-SKSNAKE4-before.webp",
+    "after": "textures-SKSNAKE4-after.webp",
+    "compare": "textures-SKSNAKE4-compare.webp"
+  },
+  {
+    "name": "SKY4",
+    "type": "textures",
+    "before": "textures-SKY4-before.webp",
+    "after": "textures-SKY4-after.webp",
+    "compare": "textures-SKY4-compare.webp"
+  },
+  {
+    "name": "MIDVINE2",
+    "type": "textures",
+    "before": "textures-MIDVINE2-before.webp",
+    "after": "textures-MIDVINE2-after.webp",
+    "compare": "textures-MIDVINE2-compare.webp"
+  },
+  {
+    "name": "SWATER3",
+    "type": "flats",
+    "before": "flats-SWATER3-before.webp",
+    "after": "flats-SWATER3-after.webp",
+    "compare": "flats-SWATER3-compare.webp"
+  },
+  {
+    "name": "AQF074",
+    "type": "flats",
+    "before": "flats-AQF074-before.webp",
+    "after": "flats-AQF074-after.webp",
+    "compare": "flats-AQF074-compare.webp"
+  },
+  {
+    "name": "MFLR8_4",
+    "type": "flats",
+    "before": "flats-MFLR8_4-before.webp",
+    "after": "flats-MFLR8_4-after.webp",
+    "compare": "flats-MFLR8_4-compare.webp"
+  },
+  {
+    "name": "FLOOR7_1",
+    "type": "flats",
+    "before": "flats-FLOOR7_1-before.webp",
+    "after": "flats-FLOOR7_1-after.webp",
+    "compare": "flats-FLOOR7_1-compare.webp"
+  },
+  {
+    "name": "GATE1",
+    "type": "flats",
+    "before": "flats-GATE1-before.webp",
+    "after": "flats-GATE1-after.webp",
+    "compare": "flats-GATE1-compare.webp"
+  },
+  {
+    "name": "FATTR0",
+    "type": "sprites",
+    "before": "sprites-FATTR0-before.webp",
+    "after": "sprites-FATTR0-after.webp",
+    "compare": "sprites-FATTR0-compare.webp"
+  },
+  {
+    "name": "BOS2E3",
+    "type": "sprites",
+    "before": "sprites-BOS2E3-before.webp",
+    "after": "sprites-BOS2E3-after.webp",
+    "compare": "sprites-BOS2E3-compare.webp"
+  },
+  {
+    "name": "FATTI3I7",
+    "type": "sprites",
+    "before": "sprites-FATTI3I7-before.webp",
+    "after": "sprites-FATTI3I7-after.webp",
+    "compare": "sprites-FATTI3I7-compare.webp"
+  },
+  {
+    "name": "BOS2G1",
+    "type": "sprites",
+    "before": "sprites-BOS2G1-before.webp",
+    "after": "sprites-BOS2G1-after.webp",
+    "compare": "sprites-BOS2G1-compare.webp"
+  },
+  {
+    "name": "CYBRE3E7",
+    "type": "sprites",
+    "before": "sprites-CYBRE3E7-before.webp",
+    "after": "sprites-CYBRE3E7-after.webp",
+    "compare": "sprites-CYBRE3E7-compare.webp"
+  }
+]
