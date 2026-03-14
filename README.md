@@ -107,7 +107,7 @@ python run_all.py
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#0f172a', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#dc2626', 'lineColor': '#dc2626', 'secondaryColor': '#1a0000'}}}%%
-flowchart LR
+flowchart TD
     classDef source  fill:#2d0f0f,stroke:#dc2626,color:#fca5a5,font-weight:bold
     classDef extract fill:#1c1400,stroke:#f97316,color:#fdba74,font-weight:bold
     classDef ai      fill:#160d2e,stroke:#a78bfa,color:#c4b5fd,font-weight:bold
@@ -117,6 +117,7 @@ flowchart LR
     WAD(["Freedoom WADs\nfreedoom1.wad\nfreedoom2.wad"]):::source
 
     subgraph EXTRACT["02  Extract Assets — omgifol"]
+        direction LR
         Walls["963 Wall Textures\ncomposited from patches\nTEXTURE1/2 + PNAMES"]:::extract
         Flats["240 Floor / Ceiling Flats\nraw 64×64 px"]:::extract
         Sprites["1,350 Sprites\nRGBA with transparency"]:::extract
