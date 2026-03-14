@@ -103,6 +103,43 @@ python run_all.py
 
 ---
 
+## Build Pipeline
+
+```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#0f172a', 'primaryTextColor': '#e2e8f0', 'primaryBorderColor': '#dc2626', 'lineColor': '#dc2626', 'secondaryColor': '#1a0000'}}}%%
+flowchart LR
+    classDef source  fill:#2d0f0f,stroke:#dc2626,color:#fca5a5,font-weight:bold
+    classDef extract fill:#1c1400,stroke:#f97316,color:#fdba74,font-weight:bold
+    classDef ai      fill:#160d2e,stroke:#a78bfa,color:#c4b5fd,font-weight:bold
+    classDef pack    fill:#0f1f3d,stroke:#60a5fa,color:#93c5fd,font-weight:bold
+    classDef output  fill:#0a2520,stroke:#10b981,color:#6ee7b7,font-weight:bold
+
+    WAD(["Freedoom WADs\nfreedoom1.wad\nfreedoom2.wad"]):::source
+
+    subgraph EXTRACT["02  Extract Assets — omgifol"]
+        Walls["963 Wall Textures\ncomposited from patches\nTEXTURE1/2 + PNAMES"]:::extract
+        Flats["240 Floor / Ceiling Flats\nraw 64×64 px"]:::extract
+        Sprites["1,350 Sprites\nRGBA with transparency"]:::extract
+    end
+
+    subgraph UPSCALE["03  Real-ESRGAN ×4 — GPU FP16"]
+        Model["RealESRGAN_x4plus_anime_6B\nspandrel + PyTorch\nalpha channel split/merge\nresume-capable"]:::ai
+    end
+
+    subgraph PACK["04  Package PK3"]
+        HiRes["hires/ folder\nGZDoom convention\nPNG per lump name"]:::pack
+    end
+
+    PK3(["freedoom-hd-textures.pk3\n~384 MB · 2,553 assets\n4× resolution"]):::output
+
+    WAD --> EXTRACT
+    Walls & Flats & Sprites --> Model
+    Model --> HiRes
+    HiRes --> PK3
+```
+
+---
+
 ## Install Guide
 
 ### GZDoom
